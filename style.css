@@ -324,7 +324,7 @@ h1 {
     width: 100%;
     max-width: 1300px;
     min-width: 300px;
-    margin: 0 auto 100%;
+    margin: 0 auto 100px;
 }
 .btn-modale {
     width: 350px;
@@ -439,10 +439,68 @@ h1 {
     }
 }
 
+/* ------------- Section prices --------------- */
 
+.titre-tarifs{
+    background: #f1f1f1;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+#tarifs {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 100px;
+}
 
-
-
-
-
-
+.carte-tarif {
+    width: 350px;
+    height: auto;
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(33,33,33) 99%),repeating-linear-gradient(0deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(163, 163, 163,0.2) 0px, rgba(163, 163, 163,0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+    color: #f1f1f1;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+.carte-tarif h3 {
+    text-align: center;
+    font-size: 45px;
+    margin: 25px 0;
+    font-family: Monserrat, Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.prix-carte {
+    text-align: center;
+    font-size: 30px;
+    margin: 25px 0;
+}
+.prix-carte span {
+    font-size: 80px;
+    position: relative;
+}
+.prix-carte span::before {
+    content: "£";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    font-size: 25px;
+}
+.infos-carte {
+    width: 170px;
+    margin: 20px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 22px;
+}
+.infos-carte img {
+    margin-right: 7px;
+    width: 20px;
+}
